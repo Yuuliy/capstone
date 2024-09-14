@@ -6,7 +6,7 @@ This README would normally document whatever steps are necessary to get your app
 ## Dependencies
 
 * Nodejs v16.x
-* NPM v8.x
+* Mongoserver
 
 ## Installation
 
@@ -34,44 +34,4 @@ cp .env.example .env
 
 ```bash
 npm run start
-```
-
-* Running the happy birth day cronjob:
-
-```bash
-npm run start:hpbdjob
-```
-
-* Running the release voucher schedule cronjob:
-
-```bash
-npm run start:release-voucher
-```
-
-* Running the expired voucher cronjob:
-
-```bash
-npm run start:expired-voucher
-```
-
-* Running the remove voucher expired cronjob:
-
-```bash
-npm run start:remove-voucher
-```
-
-## Deployment
-
-* Enter environment variable in ``` deploy/pm2-app.json ```
-
-* Install pm2
-
-```bash
-npm install pm2 -g
-```
-
-* Run the whole project
-
-```bash
-pm2 start deploy/pm2-app.json
 ```
